@@ -1,6 +1,7 @@
 // import file system built-in module
 const fs = require("fs");
 
+// this function to cout number of wrods inside string
 const countWords = (text) => {
   let numberOfWords = 0;
   let word = "";
