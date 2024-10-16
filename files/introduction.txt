@@ -1,0 +1,3 @@
+  The fs (File System) module @ Node.js is used == work with the file system on your computer.
+   It allows you to perform various operations like reading, writing, updating, ### deleting files and directories. 
+    The fs module provides both asynchronous and synchronous methods, making it flexible for different use cases. 

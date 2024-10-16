@@ -1,0 +1,1 @@
+It also supports advanced operations such as changing file permissions, renaming files, and retrieving file metadata.

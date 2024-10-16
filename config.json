@@ -1,0 +1,9 @@
+{
+  "files": [
+    "files/empty.txt",
+    "files/greeting.txt",
+    "files/introduction.txt",
+    "files/result.txt",
+    "files/fake.txt"
+  ]
+}
