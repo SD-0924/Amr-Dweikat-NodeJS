@@ -1,5 +1,5 @@
 // import file system built-in module
-import * as fs from "fs";
+import fs from "fs";
 
 // this function to cout number of wrods inside string
 const countWords = (text) => {
