@@ -33,7 +33,7 @@ try {
   // get the list of file paths from object
   const listOfFile = obj.files;
 
-  // loop over list of files
+  // loop to iterate over each file
   for (const file of listOfFile) {
     // counting the number of words in each file and displaying the results asynchronously
     fs.readFile(file, "utf-8", (error, fileContent) => {
