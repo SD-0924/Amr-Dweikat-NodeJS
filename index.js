@@ -1,7 +1,10 @@
 // import file system built-in module
 import fs from "fs";
 
-// this function to cout number of wrods inside string
+// this method to check if word contains alphabetical characters only or not
+const validWord = (word) => /^[A-Za-z]+$/.test(word);
+
+// this function to cout number of words inside string
 const countWords = (text) => {
   let numberOfWords = 0;
   let word = "";
@@ -9,13 +12,13 @@ const countWords = (text) => {
     if (character !== " " && character !== "\n") {
       word += character;
     } else {
-      if (word !== "") {
+      if (validWord(word)) {
         numberOfWords++;
-        word = "";
       }
+      word = "";
     }
   }
-  if (word !== "") {
+  if (validWord(word)) {
     numberOfWords++;
   }
   return numberOfWords;
@@ -39,6 +42,7 @@ try {
         console.log(`${file}: error this file does not exist`);
         return;
       }
+
       // start counting the number of words then display the result
       console.log(`${file}: ${countWords(fileContent)} words`);
     });
