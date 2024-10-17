@@ -23,10 +23,13 @@ const countWords = (text) => {
 try {
   // reading config file content by using file system module
   const jsonFileContent = fs.readFileSync("config.json", "utf-8");
+
   // convert config file content into a JavaScript object by using built-in JavaScript method
   const obj = JSON.parse(jsonFileContent);
+
   // get the list of file paths from object
   const listOfFile = obj.files;
+
   // loop over list of files
   for (const file of listOfFile) {
     // counting the number of words in each file and displaying the results asynchronously
